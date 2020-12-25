@@ -239,11 +239,15 @@ nav .social-link .icon svg {
     flex-direction: column-reverse;
     align-items: center;
     padding-top: 200px;
-    height: 110vh;
+    height: 100vh;
   }
   .home-left {
     width: 80%;
     padding-top: 20px;
     text-align: center;
   }
+  .margin-left {
+    margin-left: 15px;
+  }
 }
+
