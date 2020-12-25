@@ -1,0 +1,249 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --primaryColor: #f1f1f1;
+  --black: #222;
+  --black2: #555;
+  --black3: #252525;
+  --black4: #000;
+  --black5: #212529;
+  --orange: #eb0028;
+  --white: #fff;
+  --grey: #959595;
+  --grey2: #666;
+  --grey3: #ccc;
+  --secondaryColor: #2b1f4d;
+  --yellow: #ffcc00;
+  --green: #59b210;
+  --blue: rgb(56, 10, 223);
+}
+body {
+  font-family: sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.border {
+  border: 0px solid black;
+}
+.home-border {
+  border: 0px solid black;
+}
+.margin-left {
+  margin-left: 100px;
+}
+.margin-right {
+  margin-right: 100px;
+}
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+nav .logo {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--black4);
+}
+.nav-link {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.nav-link li a {
+  color: black;
+  text-transform: uppercase;
+}
+.nav-link li a:hover {
+  color: var(--orange);
+}
+nav .social-link {
+  display: flex;
+  width: 5%;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+nav .social-link .icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  /* nav .nav-link
+    {
+        display: none;
+    } */
+
+  body {
+    overflow-x: hidden;
+  }
+  .margin-left {
+    margin-left: 30px;
+  }
+  .hamburger {
+    margin-left: 30px;
+  }
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--black4);
+    margin: 4px;
+  }
+
+  .nav-link {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    height: 90vh;
+    width: 50%;
+    background-color: white;
+    flex-direction: column;
+    justify-content: start;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-link li {
+    padding: 20px 15px;
+    cursor: pointer;
+  }
+  .nav-link li a {
+    color: var(--black2);
+  }
+  .nav-link li a:hover {
+    color: var(--black4);
+  }
+  nav .social-link {
+    width: 15%;
+  }
+  .cross .line:nth-child(1) {
+    transform: rotateZ(-45deg) translate(5px, 9px);
+  }
+  .cross .line:nth-child(2) {
+    display: none;
+  }
+  .cross .line:nth-child(3) {
+    transform: rotateZ(45deg) translate(5px, -9px);
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+
+@media screen and (max-width: 468px) {
+  nav .social-link {
+    width: 15%;
+  }
+  nav .logo {
+    cursor: pointer;
+    font-size: 25px;
+  }
+}
+
+/* Navbar ended */
+
+.home {
+  margin-top: 10vh;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primaryColor);
+  display: flex;
+  justify-content: space-between;
+}
+.home-left {
+  width: 40%;
+  padding-top: 200px;
+}
+.home-left .title {
+  color: var(--black5);
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+.home-left .subtitle {
+  color: var(--black4);
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.home-left p {
+  font-size: 18px;
+  color: var(--black5);
+  font-family: sans-serif;
+
+  margin-bottom: 20px;
+}
+.home-left button {
+  outline: 2px solid var(--black4);
+  border: none;
+  width: 160px;
+  height: 50px;
+  background-color: var(--black4);
+  color: white;
+  transition: all 0.5s;
+}
+.home-left button a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.home-left button:hover {
+  background-color: transparent;
+}
+.home-left button:hover a {
+  color: var(--black4);
+}
+.home-right {
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .home-left .subtitle {
+    font-size: 25px;
+  }
+  .home-right .image-container {
+    margin-top: 100px;
+    width: 300px;
+    height: 400px;
+  }
+  .home-right .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .home-left button {
+    width: 140px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home {
+    /* background-color: tomato; */
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 200px;
+    height: 110vh;
+  }
+  .home-left {
+    width: 80%;
+    padding-top: 20px;
+    text-align: center;
+  }
+}

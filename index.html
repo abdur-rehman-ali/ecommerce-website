@@ -1,14 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- custom style -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Carousel glider js -->
+
+    <!-- Required Core Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+
+    <!-- Optional Theme Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+
+    <!-- AOS library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Ecommerce site</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="border">
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="logo border">Shoppingum</div>
+      <ul class="nav-link border">
+        <li class="nav-item border"><a href="">Home</a></li>
+        <li class="nav-item border"><a href="">Category</a></li>
+        <li class="nav-item border"><a href="">Blog</a></li>
+        <li class="nav-item border"><a href="">Contact</a></li>
+      </ul>
+      <div class="social-link border">
+        <div class="icon search">
+          <?xml version="1.0" encoding="iso-8859-1"?>
+
+          <svg
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 512.005 512.005"
+            style="enable-background: new 0 0 512.005 512.005"
+            xml:space="preserve"
+          >
+            <g>
+              <g>
+                <path
+                  d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+        S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+        c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+         M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"
+                />
+              </g>
+            </g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+          </svg>
+        </div>
+        <div class="icon shopping">
+          <svg viewBox="-35 0 512 512.00102" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m443.054688 495.171875-38.914063-370.574219c-.816406-7.757812-7.355469-13.648437-15.15625-13.648437h-73.140625v-16.675781c0-51.980469-42.292969-94.273438-94.273438-94.273438-51.984374 0-94.277343 42.292969-94.277343 94.273438v16.675781h-73.140625c-7.800782 0-14.339844 5.890625-15.15625 13.648437l-38.9140628 370.574219c-.4492192 4.292969.9453128 8.578125 3.8320308 11.789063 2.890626 3.207031 7.007813 5.039062 11.324219 5.039062h412.65625c4.320313 0 8.4375-1.832031 11.324219-5.039062 2.894531-3.210938 4.285156-7.496094 3.835938-11.789063zm-285.285157-400.898437c0-35.175782 28.621094-63.796876 63.800781-63.796876 35.175782 0 63.796876 28.621094 63.796876 63.796876v16.675781h-127.597657zm-125.609375 387.25 35.714844-340.097657h59.417969v33.582031c0 8.414063 6.824219 15.238282 15.238281 15.238282s15.238281-6.824219 15.238281-15.238282v-33.582031h127.597657v33.582031c0 8.414063 6.824218 15.238282 15.238281 15.238282 8.414062 0 15.238281-6.824219 15.238281-15.238282v-33.582031h59.417969l35.714843 340.097657zm0 0"
+            />
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home-container">
+      <div class="home home-border">
+        <div class="home-left home-border margin-left">
+          <div class="title home-border">New sale 2020</div>
+          <div class="subtitle home-border">Phone made for you</div>
+          <p class="home-border">
+            Trending from mobile and headphone collection
+          </p>
+          <button><a href="">Shop now</a></button>
+        </div>
+        <div class="home-right home-border margin-right">
+          <div class="image-container home-border">
+            <img src="./images/banner_01.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="home home-border">
+        <div class="home-left home-border margin-left">
+          <div class="title home-border">New sale 2020</div>
+          <div class="subtitle home-border">Phone made for you</div>
+          <p class="home-border">
+            Trending from mobile and headphone collection
+          </p>
+          <button><a href="">Shop now</a></button>
+        </div>
+        <div class="home-right home-border margin-right">
+          <div class="image-container home-border">
+            <img src="./images/banner_02.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="home home-border">
+        <div class="home-left home-border margin-left">
+          <div class="title home-border">New sale 2020</div>
+          <div class="subtitle home-border">Phone made for you</div>
+          <p class="home-border">
+            Trending from mobile and headphone collection
+          </p>
+          <button><a href="">Shop now</a></button>
+        </div>
+        <div class="home-right home-border margin-right">
+          <div class="image-container home-border">
+            <img src="./images/banner_01.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="home home-border">
+        <div class="home-left home-border margin-left">
+          <div class="title home-border">New sale 2020</div>
+          <div class="subtitle home-border">Phone made for you</div>
+          <p class="home-border">
+            Trending from mobile and headphone collection
+          </p>
+          <button><a href="">Shop now</a></button>
+        </div>
+        <div class="home-right home-border margin-right">
+          <div class="image-container home-border">
+            <img src="./images/banner_02.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider js -->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/product.js"></script>
+  </body>
 </html>
