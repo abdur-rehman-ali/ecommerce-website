@@ -55,7 +55,7 @@ nav {
   background-color: white;
 }
 nav .logo {
-  cursor: pointer;
+  cursor: pointer;;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -118,6 +118,7 @@ nav .social-link .icon svg {
     justify-content: start;
     transform: translateX(-100%);
     transition: transform 0.5s ease-in;
+    z-index: 999;
   }
   .nav-link li {
     padding: 20px 15px;
@@ -250,4 +251,3 @@ nav .social-link .icon svg {
     margin-left: 15px;
   }
 }
-

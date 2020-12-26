@@ -14,8 +14,9 @@
       rel="stylesheet"
     />
 
-    <!-- Carousel glider js -->
+    <!-- Owl Carousel  -->
 
+    <link rel="stylesheet" href="./css/owl.carousel.css" />
     <!-- Required Core Stylesheet -->
     <link
       rel="stylesheet"
@@ -100,78 +101,108 @@
       </div>
     </nav>
 
-    <section id="home-container">
-      <div class="home home-border">
-        <div class="home-left home-border margin-left">
-          <div class="title home-border">New sale 2020</div>
-          <div class="subtitle home-border">Phone made for you</div>
-          <p class="home-border">
-            Trending from mobile and headphone collection
-          </p>
-          <button><a href="">Shop now</a></button>
-        </div>
-        <div class="home-right home-border margin-right">
-          <div class="image-container home-border">
-            <img src="./images/banner_01.png" alt="" />
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="home home-border">
+          <div class="home-left home-border margin-left">
+            <div class="title home-border">New sale 2020</div>
+            <div class="subtitle home-border">Phone made for you</div>
+            <p class="home-border">
+              Trending from mobile and headphone collection
+            </p>
+            <button><a href="">Shop now</a></button>
+          </div>
+          <div class="home-right home-border margin-right">
+            <div class="image-container home-border">
+              <img src="./images/banner_01.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
-      <div class="home home-border">
-        <div class="home-left home-border margin-left">
-          <div class="title home-border">New sale 2020</div>
-          <div class="subtitle home-border">Phone made for you</div>
-          <p class="home-border">
-            Trending from mobile and headphone collection
-          </p>
-          <button><a href="">Shop now</a></button>
-        </div>
-        <div class="home-right home-border margin-right">
-          <div class="image-container home-border">
-            <img src="./images/banner_02.png" alt="" />
+      <div class="item">
+        <div class="home home-border">
+          <div class="home-left home-border margin-left">
+            <div class="title home-border">New sale 2020</div>
+            <div class="subtitle home-border">Phone made for you</div>
+            <p class="home-border">
+              Trending from mobile and headphone collection
+            </p>
+            <button><a href="">Shop now</a></button>
+          </div>
+          <div class="home-right home-border margin-right">
+            <div class="image-container home-border">
+              <img src="./images/banner_02.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
-      <div class="home home-border">
-        <div class="home-left home-border margin-left">
-          <div class="title home-border">New sale 2020</div>
-          <div class="subtitle home-border">Phone made for you</div>
-          <p class="home-border">
-            Trending from mobile and headphone collection
-          </p>
-          <button><a href="">Shop now</a></button>
-        </div>
-        <div class="home-right home-border margin-right">
-          <div class="image-container home-border">
-            <img src="./images/banner_01.png" alt="" />
+      <div class="item">
+        <div class="home home-border">
+          <div class="home-left home-border margin-left">
+            <div class="title home-border">New sale 2020</div>
+            <div class="subtitle home-border">Phone made for you</div>
+            <p class="home-border">
+              Trending from mobile and headphone collection
+            </p>
+            <button><a href="">Shop now</a></button>
+          </div>
+          <div class="home-right home-border margin-right">
+            <div class="image-container home-border">
+              <img src="./images/banner_01.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
-      <div class="home home-border">
-        <div class="home-left home-border margin-left">
-          <div class="title home-border">New sale 2020</div>
-          <div class="subtitle home-border">Phone made for you</div>
-          <p class="home-border">
-            Trending from mobile and headphone collection
-          </p>
-          <button><a href="">Shop now</a></button>
-        </div>
-        <div class="home-right home-border margin-right">
-          <div class="image-container home-border">
-            <img src="./images/banner_02.png" alt="" />
+      <div class="item">
+        <div class="home home-border">
+          <div class="home-left home-border margin-left">
+            <div class="title home-border">New sale 2020</div>
+            <div class="subtitle home-border">Phone made for you</div>
+            <p class="home-border">
+              Trending from mobile and headphone collection
+            </p>
+            <button><a href="">Shop now</a></button>
+          </div>
+          <div class="home-right home-border margin-right">
+            <div class="image-container home-border">
+              <img src="./images/banner_02.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Slider js -->
-    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
       AOS.init();
     </script>
     <script src="./js/index.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/product.js"></script>
+    <!-- Owl carousel  -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+
+          autoplay: true,
+          autoplayTimeout: 3000,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
