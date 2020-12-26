@@ -251,3 +251,126 @@ nav .social-link .icon svg {
     margin-left: 15px;
   }
 }
+/* Box styling */
+#box
+{
+ 
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 85%;
+}
+#box .box-1
+{
+  width: 48%;
+  background-color: var(--primaryColor);
+  display: flex;
+  justify-content: space-between;
+}
+#box .box-1 .box-left .image-container img
+{
+  margin-left: 40px;
+  height: 370px;
+}
+#box .box-1 .box-right 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+ 
+}
+#box .box-1 .box-right .title
+{
+  color: var(--black2);
+  margin-bottom: 10px;  
+}
+#box .box-1 .box-right .sub-title
+{
+  color: var(--black4);
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#box .box-1 .box-right button
+{
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 25px;
+  border:2px solid var(--secondaryColor);
+  background-color: var(--secondaryColor);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+#box .box-1 .box-right button:hover
+{
+  color: var(--secondaryColor);
+  background-color: transparent;
+}
+@media screen and (max-width: 768px) 
+{
+  #box
+  {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 90%;
+    flex-direction: column;
+  }
+  #box .box-1
+  {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
+@media screen and (max-width: 600px)
+{
+  body
+  {
+    background-color: tomato;
+  }
+  #box .box-1 .box-left .image-container img
+{
+  margin-left: 40px;
+  height: 250px;
+}
+#box .box-1 .box-right .sub-title
+{
+  font-size: 22px;
+}
+
+}
+@media screen and (max-width: 438px)
+{
+  body
+  {
+    background-color: yellow;
+  }
+  #box .box-1 .box-right .sub-title
+  {
+    font-size: 16px;
+  }
+  #box .box-1 .box-right .sub-title
+{
+  font-size: 18px;
+}
+#box .box-1 .box-right 
+{
+  margin-right: 10px;
+}
+#box .box-1 .box-left .image-container img
+{
+  margin-left: 20px;
+ height: 200px;
+}
+
+}
